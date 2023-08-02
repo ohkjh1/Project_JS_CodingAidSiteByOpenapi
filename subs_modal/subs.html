@@ -10,18 +10,18 @@
     <link rel="stylesheet" href="./sbus.css">
 </head>
 
-<body>
+<body class="subs_body">
     
 
-    <div class="modal">
-        <div class="modal-content">
+    <div class="subs_modal">
+        <div class="subs_modal_content">
             <!-- <div class="photo"></div> -->
 
        
-            <div class="desc-header">
-                <div id="nsd"><h2>NSD</h2></div>
+            <div class="subs_header">
+                <div id="subs_title"><h2>NSD</h2></div>
                 <div>
-                    <button class="btn-close" >&times;</button>
+                    <button class="subs_button_close" >&times;</button>
                 </div>
 
                 <div>
@@ -29,16 +29,12 @@
                     학습 능률을 높이는 탁월한 선택! <br />
                     구독 후 다양한 이점을 누리세요! <br /><br>
                     For month
-
                 </p>
                 </div>
-
-                <div>
-                    <button class="btn-close">&times;</button>
-                </div>
+              
             </div> 
 
-            <div class="desc-content">
+            <div class="subs_desc_content">
                 <div class= "content1 content-box">
                     <div ><h2 >무료</h2></div>
                     <div class="benefits">
@@ -108,15 +104,15 @@
         
     </div>
     <div class="overlay"></div>
-    <div><button class="btn-open">구독</button></div>
+    <div><button class="subs_btn_open">구독</button></div>
 
     <script>
 
-        $('.btn-open').click(function () {
-            $('.modal, .overlay').addClass("active")
+        $('.subs_btn_open').click(function () {
+            $('.subs_modal, .overlay').addClass("active")
         })
-        $('.btn-close, .overlay').click(function () {
-            $('.modal, .overlay').removeClass("active")
+        $('.subs_button_close, .overlay').click(function () {
+            $('.subs_modal, .overlay').removeClass("active")
         })
 
     </script>

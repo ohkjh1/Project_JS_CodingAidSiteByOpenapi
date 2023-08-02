@@ -4,47 +4,35 @@
     font-family: 'Noto Sans KR', sans-serif;
     box-sizing: border-box;
 }
-body {
+.subs_body {
     font-weight: 300;
-    /* margin: 0; */
     font-size: 15px;
     line-height: 1.6em;
-    /* box-sizing: border-box; */
-
-   
 }
 
-.modal{
-    /* border: 1px solid black; */
+.subs_modal{
     position: fixed;
     top: 50%;
     left: 50%;
     transform:translate(-50%, -80%);
     opacity: 0;
     transition: 0.3s;
-    z-index: 10000;
-    
+    z-index: 10000;    
 }
-.modal.active {
+.subs_modal.active {
     opacity: 1;
     transform:translate(-50%, -50%);
 }
-.modal-content{
-    /* border: 1px solid black; */
+.subs_modal_content{
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.247);
     width: 800px;
-    /* display: flex; */
     overflow: hidden;
     background-color: #1B3455;
 }
 
-.desc{
-    flex: 2;
-    text-align: center;
-}
-.btn-close {
+.subs_button_close {
     position: absolute;
     top: 0;
     right: 0;
@@ -54,33 +42,30 @@ body {
     color: #ccc;
     font-size: 18px;
 }
-
-
-.btn-close:hover {
+.subs_button_close:hover {
     color: #000;
 }
 
-.desc-header{
+.subs_header{
     font-size:larger;
     text-align: center;
     display:absolute;
     color: #FFFFFF;
-     
 }
-#nsd{
+#subs_title{
     font-size: 38px;
 }
 
 h1,h2,h3{
     text-align: center;
 }
-.btn-open{
+.subs_btn_open{
     width: 80px;
     height:50px;
     font-size: 20px;
 }
 
-.desc-content{
+.subs_desc_content{
     display:flex;
     justify-content: center;
 }
@@ -104,22 +89,9 @@ h1,h2,h3{
 .benefits{
     margin-left:42px;
 }
-.content1{
-    /* margin-right: 20px;   */
-    /* padding: 0 4rem; */
-
-}
-
-
-.content2{
-    /* margin-right: 20px; */
-    /* padding: 0 4rem; */
-}
-
 
 .content3{
     margin-right:20px;
-    /* padding: 0 4rem; */
 }
 
 .content1:hover{
@@ -136,7 +108,7 @@ h1,h2,h3{
     transform:  scale(1.1, 1.05) ;
 }
 
-.desc-content input[type=email] {
+.subs_desc_content input[type=email] {
     display: block;
     width: 100%;
     text-align: center;
@@ -146,13 +118,13 @@ h1,h2,h3{
     border: 1px solid #ccc;
    
 }
-.desc-content input[type=email]::placeholder {
+.subs_desc_content input[type=email]::placeholder {
     color: #ccc;
 }
-.desc-content input[type=email]:focus::placeholder{
+.subs_desc_content input[type=email]:focus::placeholder{
     opacity: 0;
 }
-.desc-content button {
+.subs_desc_content button {
     display:flex;
     /* margin-left:50px; */
     padding: 7px;
@@ -174,7 +146,7 @@ h1,h2,h3{
 
 }
 
-.desc-content button:hover {
+.subs_desc_content button:hover {
     background-color: rgb(211, 22, 60);
 }
 .overlay {
@@ -195,7 +167,7 @@ h1,h2,h3{
 }
 
 @media (max-width:768px) {
-    .modal-content {
+    .subs_modal_content {
         flex-direction: column;
         width: 360px;
     }
