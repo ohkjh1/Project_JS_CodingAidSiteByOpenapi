@@ -7,7 +7,7 @@
 .subs_body {
     font-weight: 300;
     font-size: 15px;
-    line-height: 1.6em;
+    line-height: 1.35em;
 }
 
 .subs_modal{
@@ -27,7 +27,7 @@
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.247);
-    width: 800px;
+    width: 810px;
     overflow: hidden;
     background-color: #1B3455;
 }

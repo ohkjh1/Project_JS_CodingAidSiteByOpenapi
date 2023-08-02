@@ -27,7 +27,7 @@
             name : '결제테스트',
             amount : 5000,
             buyer_email : 'iamport@siot.do',
-            buyer_name : '구매자',
+            buyer_name : '김도형',
             buyer_tel : '010-1234-5678',
             buyer_addr : '광주인공지능사관학교NSDB',
             buyer_postcode : '123-456'
@@ -46,6 +46,36 @@
               });
         }
         </script>
+
+        <script>
+            function requestPay1() {
+              IMP.init('iamport'); 
+              IMP.request_pay({
+                pg: "inicis",
+                pay_method: "card",
+                merchant_uid : 'merchant_'+new Date().getTime(),
+                name : '결제테스트',
+                amount : 7000,
+                buyer_email : 'iamport@siot.do',
+                buyer_name : '김도형',
+                buyer_tel : '010-1234-5678',
+                buyer_addr : '광주인공지능사관학교NSDB',
+                buyer_postcode : '123-456'
+              }, 
+                function (rsp) {
+                    console.log(rsp);
+                    if (rsp.success) {
+                      var msg = '결제가 완료되었습니다.';
+                      alert(msg);
+                      location.href = "결제 완료 후 이동할 페이지 url"
+                    } else {
+                      var msg = '결제에 실패하였습니다.';
+                      msg += '에러내용 : ' + rsp.error_msg;
+                      alert(msg);
+                    }
+                  });
+            }
+            </script>
 </head>
 
 <body class="subs_body">
@@ -131,7 +161,7 @@
 
                     <!-- <input type="email" placeholder="이메일 주소를 입력하세요."> -->
                     <div class="btn">
-                        <button onclick="requestPay()">구독하기</button>
+                        <button onclick="requestPay1()">구독하기</button>
                     </div>
                 </div>
             </div>
