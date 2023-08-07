@@ -111,9 +111,10 @@
                 <div class="mp_banner">
                     <div class="profile"><i class="fa-solid fa-user fa-6x"></i></div>
                 </div>
-    
-                <h2 class="mp_name notosanskr">회원이름</h2><div class="mp_id notosanskr">아이디</div>
+                <form action="http://localhost:3003/mypage">
+                <h2 class="mp_name notosanskr" name ='NICK' >회원이름</h2><div class="mp_id notosanskr" name="ID">아이디</div>
             </div>
+            </form>
             <!-- 프로필 카드 창 종료 -->
             
             <!-- 메인 탭메뉴창 -->
@@ -125,17 +126,24 @@
                   <li class="mp_tab-link notosanskr" data-tab="mp_tab-4">현재 등급</li>
                   <li class="mp_tab-link notosanskr" data-tab="mp_tab-5">계정 연동</li>
                 </ul>
+<<<<<<< Updated upstream
               
                 <div id="mp_tab-1" class="mp_tab-content current"><h2 class = mp_h2>tab content3</h2><div class="mp_output"></div></div>
                 <div id="mp_tab-2" class="mp_tab-content"><h2 class = mp_h2>개인 정보</h2>
+=======
+                <div id="mp_tab-1" class="mp_tab-content current"><h2 class = mp_h2>tab content3<hr padding-top="10px"></h2><div class="mp_output"></div></div>
+                <div id="mp_tab-2" class="mp_tab-content"><h2 class = mp_h2>개인 정보<hr padding-top="10px"></h2>
+                    <form action="http://localhost:3003/mypage">
+>>>>>>> Stashed changes
                     <div class="mp_output">
                     <table class ='mypagefro'>
-                        <tr><td >이름     </td><td class ='mp_myInfo'><input type="text" readonly="yes" placeholder="이름이 표시될 곳입니다." class="mp_Info" ></td></tr>
-                        <tr><td >비밀번호 </td><td class ='mp_myInfo'><input type="text" readonly="yes" placeholder="비밀번호가 표시될 곳입니다." class="mp_Info"></td><td><button id="mp_nameCh">변경</button></td></tr>
-                        <tr><td >별명     </td><td class ='mp_myInfo'><input type="text" readonly="yes" placeholder="별명이 표시될 곳입니다." class="mp_Info"></td></tr>
+                        <tr><td >이름     </td><td class ='mp_myInfo'><input type="text" readonly="yes" placeholder="이름이 표시될 곳입니다." class="mp_Info" name="ID" ></td></tr>
+                        <tr><td >비밀번호 </td><td class ='mp_myInfo'><input type="text" readonly="yes" placeholder="비밀번호가 표시될 곳입니다." class="mp_Info" name="PW"></td><td><button id="mp_nameCh">변경</button></td></tr>
+                        <tr><td >별명     </td><td class ='mp_myInfo'><input type="text" readonly="yes" placeholder="별명이 표시될 곳입니다." class="mp_Info" name="NICK"></td></tr>
                         <tr><td >주소     </td><td class ='mp_myInfo'><input type="text" readonly="yes" placeholder="주소이 표시될 곳입니다." class="mp_Info"></td></tr>
                     </table>
                     </div>
+                    </form>
                 </div>    
                 <div id="mp_tab-3" class="mp_tab-content"><h2 class = mp_h2>tab content3</h2><div class="mp_output"></div></div>
                 <div id="mp_tab-4" class="mp_tab-content"><h2 class = mp_h2>tab content3</h2><div class="mp_output"></div></div>
