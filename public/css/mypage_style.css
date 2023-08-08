@@ -55,7 +55,7 @@ main{
     border-radius: 2rem;
     text-align: center;
     margin-top : 20px;
-    height: 20vh;
+    height: 15vh;
 }
 
 .mp_profile {
@@ -376,7 +376,7 @@ body {
 }
 
 #mp_secessionButton:hover {
-    background-color: ;
+    background-color: rgb(154, 151, 151);
 }
 
   .mp_tab-content{
