@@ -29,6 +29,10 @@ app.use(passport.session());
 
 const loginRouter = require("./router/login");
 app.use(loginRouter);
+const indexRouter = require("./router/codeExam");
+app.use(indexRouter);
+const mypageRotuer = require("./router/mypage");
+app.use(mypageRotuer);
 const joinRouter = require("./router/login");
 app.use(joinRouter);
 
