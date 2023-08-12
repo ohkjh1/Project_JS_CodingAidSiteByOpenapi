@@ -88,15 +88,15 @@ passport.use(
   )
 );
 
-// 로그인 성공 시 사용자 정보를 세션에 저장
-passport.serializeUser(function (user, done) {
-  done(null, user);
-});
+// // 로그인 성공 시 사용자 정보를 세션에 저장
+// passport.serializeUser(function (user, done) {
+//   done(null, user);
+// });
 
-// 세션에 저장된 사용자 정보를 복구하여 요청 객체에 추가
-passport.deserializeUser(function (user, done) {
-  done(null, user);
-});
+// // 세션에 저장된 사용자 정보를 복구하여 요청 객체에 추가
+// passport.deserializeUser(function (user, done) {
+//   done(null, user);
+// });
 
 // 카카오 소셜 로그인 시작
 router.get("/auth/kakao", passport.authenticate("kakao"));
@@ -143,15 +143,15 @@ passport.use(
   )
 );
 
-// 로그인 성공 시 사용자 정보를 세션에 저장
-passport.serializeUser(function (user, done) {
-  done(null, user);
-});
+// // 로그인 성공 시 사용자 정보를 세션에 저장
+// passport.serializeUser(function (user, done) {
+//   done(null, user);
+// });
 
-// 세션에 저장된 사용자 정보를 복구하여 요청 객체에 추가
-passport.deserializeUser(function (user, done) {
-  done(null, user);
-});
+// // 세션에 저장된 사용자 정보를 복구하여 요청 객체에 추가
+// passport.deserializeUser(function (user, done) {
+//   done(null, user);
+// });
 
 // 깃허브 소셜 로그인 시작
 router.get(
