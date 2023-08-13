@@ -1,23 +1,17 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Scroll 변수 설정(스크롤 값 구하기)
-    window.addEventListener('scroll', () => {
-        document.documentElement.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-      }, false);
+const express = require("express");
+const router = express.Router();
+const passport = require("passport");
 
-    // 검색 시 스크롤 자동이동 함수
-    let input = document.querySelector(".main_searchBar");
 
-    function onKeyUp(event) {
-        if (event.key === 'Enter') {
-            goToScroll();
-            console.log('전송');
-        }
-    }
-    function goToScroll() {
-        let location = document.querySelector(".codeExam_code-wrap").offsetTop;
-        window.scrollTo({top: location - 50, behavior: 'smooth'});
-    }
-    input.addEventListener("keyup", onKeyUp);
-    document.querySelector(".main_search_button").addEventListener("click", goToScroll);
-});
+// 예제 시연창
+router.get("/index/codeExam", (req, res) => {
+      // res.send(`<h1>Hello, ${req.user.displayName}</h1>`);
+      res.render("codeExam.html");
+  });
+
+//   module.exports = router;
+// router.get("/views/codeExam", (req, res) => {
+//     res.sendFile(path.join(__dirname, 'views/codeExam.html'));
+// });
+module.exports = router;
 
