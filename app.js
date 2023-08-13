@@ -32,8 +32,12 @@ app.use(loginRouter);
 
 const indexRouter = require("./router/codeExam");
 app.use(indexRouter);
+
 const mypageRotuer = require("./router/mypage");
 app.use(mypageRotuer);
+
+const codeIframeRouter = require("./router/index");
+app.use(codeIframeRouter)
 
 app.listen(3003, () => {
   console.log("서버가 3003번 포트에서 실행 중입니다.");
