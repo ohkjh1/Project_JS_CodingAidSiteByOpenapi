@@ -1,3 +1,6 @@
+# 프로젝트 후기
+https://m.blog.naver.com/ohkjh1/223187913768
+
 # 사용 폴더 내용
 
 - config : 환경변수 정보 저장 (DB연결정보, API키값 등)
